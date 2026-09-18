@@ -3,30 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Relógio digital responsivo que exibe a hora e a data local em tempo real.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
     <title>Relógio Digital</title>
 </head>
 <body>
+    <main class="clock-app">
+        <header class="clock-header">
+            <p class="eyebrow">Horário local</p>
+            <h1>Relógio Digital</h1>
+            <p class="data-atual" id="data-atual"></p>
+        </header>
 
-    <div class="relogio">
-        <div>
-            <span id="horas">00</span>
-            <span class="tempo">Horas</span>
-        </div>
+        <section class="clock-shell" aria-labelledby="clock-title">
+            <h2 class="sr-only" id="clock-title">Horário atual</h2>
 
-        <div>
-            <span id="minutos">00</span>
-            <span class="tempo">Minutos</span>
-        </div>
+            <time class="relogio" id="relogio" aria-label="Horário atual">
+                <span class="unidade-tempo">
+                    <span class="numero" id="horas">00</span>
+                    <span class="legenda">Horas</span>
+                </span>
 
-        <div>
-            <span id="segundos">00</span>
-            <span class="tempo">Segundos</span>
-        </div>
-    </div>
+                <span class="separador" aria-hidden="true">:</span>
 
-    <script src="assets/js/script.js"></script>
+                <span class="unidade-tempo">
+                    <span class="numero" id="minutos">00</span>
+                    <span class="legenda">Minutos</span>
+                </span>
+
+                <span class="separador" aria-hidden="true">:</span>
+
+                <span class="unidade-tempo">
+                    <span class="numero" id="segundos">00</span>
+                    <span class="legenda">Segundos</span>
+                </span>
+            </time>
+        </section>
+    </main>
 </body>
 </html>
-
-<script src="js/script.js"></script>
