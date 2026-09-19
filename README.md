@@ -1,17 +1,71 @@
-# 🕒 Relógio Digital
+# Relógio Digital
 
-Este é um projeto de um Relógio Digital simples e elegante, desenvolvido para praticar conceitos fundamentais de desenvolvimento web (HTML, CSS e JavaScript).
+Relógio digital responsivo que exibe a hora e a data local em tempo real. O projeto foi desenvolvido para praticar manipulação do DOM, datas em JavaScript, layout responsivo e acessibilidade.
 
-## 🚀 Tecnologias Utilizadas
-- **HTML5**: Estruturação dos elementos.
-- **CSS3**: Estilização com gradientes, sombras (box-shadow) e Flexbox para centralização.
-- **JavaScript**: Lógica para manipulação de datas (`Date()`) e atualização em tempo real (`setInterval`).
+![Prévia do relógio digital](docs/relogio-digital-preview.png)
 
-## 📚 Contexto Acadêmico
-Projeto desenvolvido como parte dos meus estudos práticos de programação, complementando minha formação na **Universidade Nove de Julho (UNI9)**, onde foco em temas como Estrutura de Dados (Grafos) e Programação Orientada a Objetos (POO).
+## Demonstração
 
-## 🛠️ Como rodar o projeto
-Basta abrir o arquivo `index.html` em qualquer navegador ou acessar o link do GitHub Pages.
+[Acesse o projeto publicado](https://gustavosaless1.github.io/relogio-digital/)
 
----
-Desenvolvido por **Gustavo Sales**
+## Funcionalidades
+
+- Exibição de horas, minutos e segundos.
+- Atualização automática a cada segundo.
+- Data completa formatada em português.
+- Horário baseado no dispositivo do visitante.
+- Layout adaptável para computadores e celulares.
+- Estrutura semântica e descrição acessível do horário.
+
+## Ferramentas do projeto
+
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+- Git e GitHub
+
+## Detalhes técnicos
+
+- `Intl.DateTimeFormat` para formatar a data em português.
+- `String.padStart()` para manter dois dígitos no relógio.
+- `setInterval()` configurado para atualizar a interface a cada 1.000 milissegundos.
+- `font-variant-numeric: tabular-nums` para evitar que os números desloquem o layout.
+- Unidades responsivas com `clamp()` e CSS Grid.
+
+## Como executar
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/GustavoSaless1/relogio-digital.git
+```
+
+Depois, abra o arquivo `index.html` no navegador ou utilize a extensão Live Server no VS Code.
+
+## Estrutura do projeto
+
+```text
+relogio-digital/
+├── css/
+│   └── style.css
+├── docs/
+│   └── relogio-digital-preview.png
+├── js/
+│   └── script.js
+├── index.html
+└── README.md
+```
+
+## Próximas melhorias
+
+- Permitir alternar entre os formatos de 12 e 24 horas.
+- Adicionar seleção de fusos horários.
+- Criar temas de cores alternativos.
+
+## Autor
+
+Desenvolvido por **Gustavo Sales**.
+
+- [GitHub](https://github.com/GustavoSaless1)
+- [LinkedIn](https://www.linkedin.com/in/gustavo-sales-a25662257/)
